@@ -1,6 +1,6 @@
 import React from 'react';
 import { IoMdClose } from 'react-icons/io';
-import brander from '../img/brander.jpg';
+import brander from '../assets/pictures/brander.jpg';
 
 export default function BranderHead() {
     return (
