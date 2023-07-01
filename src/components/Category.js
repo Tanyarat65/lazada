@@ -3,22 +3,22 @@ import {FiChevronRight} from 'react-icons/fi';
 
 export default function Category() {
     const falshSale = [
-        {id:1,imgFlash:'https://picsum.photos/id/9/200/',detail:'รองเท้าแตะแบบลำลอง'},
+        {id:1,imgFlash:'https://picsum.photos/id/21/200/',detail:'รองเท้าแตะแบบลำลอง'},
         {id:2,imgFlash:'https://picsum.photos/id/20/200/',detail:'รองเท้าแตะแบบลำลอง'},
-        {id:3,imgFlash:'https://picsum.photos/id/22/200/',detail:'รองเท้าแตะแบบลำลอง'},
-        {id:4,imgFlash:'https://picsum.photos/id/33/200/',detail:'รองเท้าแตะแบบลำลอง'},
-        {id:5,imgFlash:'https://picsum.photos/id/51/200/',detail:'รองเท้าแตะแบบลำลอง'},
-        {id:6,imgFlash:'https://picsum.photos/id/61/200/',detail:'รองเท้าแตะแบบลำลอง'},
-        {id:7,imgFlash:'https://picsum.photos/id/9/200/',detail:'รองเท้าแตะแบบลำลอง'},
+        {id:3,imgFlash:'https://picsum.photos/id/30/200/',detail:'รองเท้าแตะแบบลำลอง'},
+        {id:4,imgFlash:'https://picsum.photos/id/21/200/',detail:'รองเท้าแตะแบบลำลอง'},
+        {id:5,imgFlash:'https://picsum.photos/id/20/200/',detail:'รองเท้าแตะแบบลำลอง'},
+        {id:6,imgFlash:'https://picsum.photos/id/30/200/',detail:'รองเท้าแตะแบบลำลอง'},
+        {id:7,imgFlash:'https://picsum.photos/id/21/200/',detail:'รองเท้าแตะแบบลำลอง'},
         {id:8,imgFlash:'https://picsum.photos/id/20/200/',detail:'รองเท้าแตะแบบลำลอง'},
-        {id:9,imgFlash:'https://picsum.photos/id/22/200/',detail:'รองเท้าแตะแบบลำลอง'},
-        {id:10,imgFlash:'https://picsum.photos/id/33/200/',detail:'รองเท้าแตะแบบลำลอง'},
-        {id:11,imgFlash:'https://picsum.photos/id/51/200/',detail:'รองเท้าแตะแบบลำลอง'},
-        {id:12,imgFlash:'https://picsum.photos/id/61/200/',detail:'รองเท้าแตะแบบลำลอง'},
-        {id:13,imgFlash:'https://picsum.photos/id/9/200/',detail:'รองเท้าแตะแบบลำลอง'},
+        {id:9,imgFlash:'https://picsum.photos/id/30/200/',detail:'รองเท้าแตะแบบลำลอง'},
+        {id:10,imgFlash:'https://picsum.photos/id/21/200/',detail:'รองเท้าแตะแบบลำลอง'},
+        {id:11,imgFlash:'https://picsum.photos/id/20/200/',detail:'รองเท้าแตะแบบลำลอง'},
+        {id:12,imgFlash:'https://picsum.photos/id/30/200/',detail:'รองเท้าแตะแบบลำลอง'},
+        {id:13,imgFlash:'https://picsum.photos/id/21/200/',detail:'รองเท้าแตะแบบลำลอง'},
         {id:14,imgFlash:'https://picsum.photos/id/20/200/',detail:'รองเท้าแตะแบบลำลอง'},
-        {id:15,imgFlash:'https://picsum.photos/id/22/200/',detail:'รองเท้าแตะแบบลำลอง'},
-        {id:16,imgFlash:'https://picsum.photos/id/33/200/',detail:'รองเท้าแตะแบบลำลอง'},
+        {id:15,imgFlash:'https://picsum.photos/id/30/200/',detail:'รองเท้าแตะแบบลำลอง'},
+        {id:16,imgFlash:'https://picsum.photos/id/21/200/',detail:'รองเท้าแตะแบบลำลอง'},
     ];
 
   return (

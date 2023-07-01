@@ -4,12 +4,12 @@ import logoBrand from '../assets/pictures/logoBrand.jpg';
 
 export default function LazMall() {
     const flashSale = [
-        {id:1,imgFlash:'https://picsum.photos/id/90/200/',detail:'CB Cotton',logo:logoBrand},
+        {id:1,imgFlash:'https://picsum.photos/id/21/200/',detail:'CB Cotton',logo:logoBrand},
         {id:2,imgFlash:'https://picsum.photos/id/20/200/',detail:'CB Cotton',logo:logoBrand},
-        {id:3,imgFlash:'https://picsum.photos/id/22/200/',detail:'CB Cotton',logo:logoBrand},
-        {id:4,imgFlash:'https://picsum.photos/id/33/200/',detail:'CB Cotton',logo:logoBrand},
-        {id:5,imgFlash:'https://picsum.photos/id/51/200/',detail:'CB Cotton',logo:logoBrand},
-        {id:6,imgFlash:'https://picsum.photos/id/61/200/',detail:'CB Cotton',logo:logoBrand},
+        {id:3,imgFlash:'https://picsum.photos/id/30/200/',detail:'CB Cotton',logo:logoBrand},
+        {id:4,imgFlash:'https://picsum.photos/id/21/200/',detail:'CB Cotton',logo:logoBrand},
+        {id:5,imgFlash:'https://picsum.photos/id/30/200/',detail:'CB Cotton',logo:logoBrand},
+        {id:6,imgFlash:'https://picsum.photos/id/20/200/',detail:'CB Cotton',logo:logoBrand},
     ];
 
   return (

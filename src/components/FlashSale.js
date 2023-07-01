@@ -2,12 +2,12 @@ import React,{useState,useEffect} from 'react'
 
 export default function FlashSale() {
     const falshSale = [
-        {id:1,imgFlash:'https://picsum.photos/id/9/200/',detail:'มีสิทธิรับ❗❗ [วันที่ 1 ก.ค. 66] HAIER เครื่องปรับอากาศ ติดผนัง 9489 BTU [ONEDERFUL WALLET - 1 สิทธิ์/ลูกค้า]',price:389,fullPrice:'฿618',discroud:'-56%'},
+        {id:1,imgFlash:'https://picsum.photos/id/21/200/',detail:'มีสิทธิรับ❗❗ [วันที่ 1 ก.ค. 66] HAIER เครื่องปรับอากาศ ติดผนัง 9489 BTU [ONEDERFUL WALLET - 1 สิทธิ์/ลูกค้า]',price:389,fullPrice:'฿618',discroud:'-56%'},
         {id:2,imgFlash:'https://picsum.photos/id/20/200/',detail:'มีสิทธิรับ❗❗ [วันที่ 1 ก.ค. 66] HAIER เครื่องปรับอากาศ ติดผนัง 9489 BTU [ONEDERFUL WALLET - 1 สิทธิ์/ลูกค้า]',price:389,fullPrice:'฿618',discroud:'-56%'},
-        {id:3,imgFlash:'https://picsum.photos/id/22/200/',detail:'มีสิทธิรับ❗❗ [วันที่ 1 ก.ค. 66] HAIER เครื่องปรับอากาศ ติดผนัง 9489 BTU [ONEDERFUL WALLET - 1 สิทธิ์/ลูกค้า]',price:389,fullPrice:'฿618',discroud:'-56%'},
-        {id:4,imgFlash:'https://picsum.photos/id/33/200/',detail:'มีสิทธิรับ❗❗ [วันที่ 1 ก.ค. 66] HAIER เครื่องปรับอากาศ ติดผนัง 9489 BTU [ONEDERFUL WALLET - 1 สิทธิ์/ลูกค้า]',price:389,fullPrice:'฿618',discroud:'-56%'},
-        {id:5,imgFlash:'https://picsum.photos/id/51/200/',detail:'มีสิทธิรับ❗❗ [วันที่ 1 ก.ค. 66] HAIER เครื่องปรับอากาศ ติดผนัง 9489 BTU [ONEDERFUL WALLET - 1 สิทธิ์/ลูกค้า]',price:389,fullPrice:'฿618',discroud:'-56%'},
-        {id:6,imgFlash:'https://picsum.photos/id/61/200/',detail:'มีสิทธิรับ❗❗ [วันที่ 1 ก.ค. 66] HAIER เครื่องปรับอากาศ ติดผนัง 9489 BTU [ONEDERFUL WALLET - 1 สิทธิ์/ลูกค้า]',price:389,fullPrice:'฿618',discroud:'-56%'},
+        {id:3,imgFlash:'https://picsum.photos/id/30/200/',detail:'มีสิทธิรับ❗❗ [วันที่ 1 ก.ค. 66] HAIER เครื่องปรับอากาศ ติดผนัง 9489 BTU [ONEDERFUL WALLET - 1 สิทธิ์/ลูกค้า]',price:389,fullPrice:'฿618',discroud:'-56%'},
+        {id:4,imgFlash:'https://picsum.photos/id/21/200/',detail:'มีสิทธิรับ❗❗ [วันที่ 1 ก.ค. 66] HAIER เครื่องปรับอากาศ ติดผนัง 9489 BTU [ONEDERFUL WALLET - 1 สิทธิ์/ลูกค้า]',price:389,fullPrice:'฿618',discroud:'-56%'},
+        {id:5,imgFlash:'https://picsum.photos/id/20/200/',detail:'มีสิทธิรับ❗❗ [วันที่ 1 ก.ค. 66] HAIER เครื่องปรับอากาศ ติดผนัง 9489 BTU [ONEDERFUL WALLET - 1 สิทธิ์/ลูกค้า]',price:389,fullPrice:'฿618',discroud:'-56%'},
+        {id:6,imgFlash:'https://picsum.photos/id/30/200/',detail:'มีสิทธิรับ❗❗ [วันที่ 1 ก.ค. 66] HAIER เครื่องปรับอากาศ ติดผนัง 9489 BTU [ONEDERFUL WALLET - 1 สิทธิ์/ลูกค้า]',price:389,fullPrice:'฿618',discroud:'-56%'},
     ];
 
     //-----CountDown-----
