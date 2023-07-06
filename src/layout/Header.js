@@ -43,9 +43,7 @@ export default function Header() {
 
         </div>
         <div
-          className={`${
-            isMenuOpen ? 'block' : 'hidden'
-          } max-[960px]:flex justify-center mt-4 text-xs`}
+          className={`${isMenuOpen ? 'block' : 'hidden'} block justify-center mt-4 text-xs md:flex`}
         >
           {menu.map((item) => (
             <div

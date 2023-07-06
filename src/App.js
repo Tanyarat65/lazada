@@ -16,43 +16,15 @@ import Category from './components/Category';
 import Recommend from './components/Recommend';
 
 function App() {
-    // const [showSidebar,setShowSidebar] = useState(false);
-    // const [windowSize, setWindowSize] = useState({
-    //     width: window.innerWidth,
-    //     height: window.innerHeight
-    //   });
 
-    // useEffect(() => {
-    //     const handleResize = () => {
-    //       setWindowSize({
-    //         width: window.innerWidth,
-    //         height: window.innerHeight
-    //       });
-    //     };
-    
-    //     window.addEventListener('resize', handleResize);
-    
-    //     return () => {
-    //       window.removeEventListener('resize', handleResize);
-    //     };
-    //   }, []);
-
-    // const handleToggleSidebar = () => {
-    //     setShowSidebar(!showSidebar);
-    // };
     return (
         <>
             <BranderHead />
-            <div className='w-full'>
+            <div className='w-full min-w-[370px]'>
                 <Header />
                 <div className='p-calc'><SearchBar /></div>
                 <div className='p-calc bg-[#909FD8]'>
                     <div className='relative'>
-                        {/* {(windowSize.width >= 1200 || showSidebar) && <Sidebar />}
-                        {(windowSize.width < 1200 && !showSidebar) && (
-                        <button onClick={handleToggleSidebar}>เรียก Sidebar</button>
-                        )}
-                         */}
                         <Sidebar />
                         <HeroContent />
                     </div>

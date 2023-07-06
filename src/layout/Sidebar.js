@@ -572,6 +572,8 @@ export default function Sidebar() {
     const [finalCategories, setFinalCategories] = useState([]);
     const [categoryDetectParameter, setCategoryDetectParameter] = useState('');
     const [subCategoryDetectParameter, setSubCategoryDetectParameter] = useState('');
+    const [hambergerMenu, setHambergerMenu] = useState(false);
+
 
     // On Mouse Enter
     const handleCategoryOnMouseEnter = (subCategories, category) => {
@@ -613,63 +615,89 @@ export default function Sidebar() {
         setSubCategoryDetectParameter('');
     }
 
+    
+    const toggleMenu = () =>{
+        setHambergerMenu(!hambergerMenu);
+    }
+    console.log(hambergerMenu);
+
     return (
         <>
             <div className='grid grid-cols-[200px] md:grid-cols-[200px_200px] lg:grid-cols-[200px_200px_200px] h-[344px] absolute top-0 left-0 z-50' onMouseLeave={() => handleClearDetectParameter()}>
-                <div className='bg-white shadow-basic'>
-                    {searchCategories.map((search, index) => (
-                        <div
-                            key={index}
-                            onMouseEnter={() => handleCategoryOnMouseEnter(search.subCategories, search.category)}
-                            onMouseLeave={() => handleCategoryOnMouseLeave()}
-                            className='cursor-pointer'
-                        >
-                            <div className={`flex justify-between items-center py-1 pl-2 pr-2 hover:text-[#f36d00] hover:bg-[#EDEFF1] group ${search.category === categoryDetectParameter ? 'text-[#f36d00] bg-[#EDEFF1]': 'text-white'}`}>
-                                <div className={`text-[13px] group-hover:text-[#f36d00] overflow-hidden whitespace-nowrap overflow-ellipsis ${search.category === categoryDetectParameter ? 'text-[#f36d00] bg-[#EDEFF1]': 'text-black'}`}>{search.category}</div>
-                                <FaAngleRight />
-                            </div>
-                        </div>
-                    ))}
-                </div>
-
-                {isCategoryHovered && (
-                    <div
-                        onMouseEnter={() => handleOutSubCategoriesOnMouseEnter()}
-                        onMouseLeave={() => handleSubCategoriesOnMouseLeave()}
-                        className=' bg-white shadow-no-left'
+                <div className='md:hidden'>
+                    <button 
+                        className='text-white hover:text-gray-800 focus:outline-none'
+                        onClick={toggleMenu}
                     >
-                        {subCategories.map((sub, subIndex) => (
-                            <div 
-                                key={subIndex}
-                                onMouseEnter={() => handleSubCategoriesOnMouseEnter(sub.finalSubCategories, sub.subCategory)}
-                                onMouseLeave={() => handleSubCategoriesOnMouseLeave()}
+                    <svg
+                        className="w-6 h-6"
+                        fill="none"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                    >
+                        <path d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                    </button>
+                </div>
+                <div className={`${hambergerMenu ? 'block' : 'hidden' } md:block text-xs`}>
+                    <div className='bg-white shadow-basic'>
+                        {searchCategories.map((search, index) => (
+                            <div
+                                key={index}
+                                onMouseEnter={() => handleCategoryOnMouseEnter(search.subCategories, search.category)}
+                                onMouseLeave={() => handleCategoryOnMouseLeave()}
                                 className='cursor-pointer'
                             >
-                                <div className={`flex justify-between items-center py-1 pl-2 pr-2 hover:text-[#f36d00] hover:bg-[#EDEFF1] group ${sub.subCategory === subCategoryDetectParameter ? 'text-[#f36d00] bg-[#EDEFF1]': 'text-white'}`}>
-                                    <div className={`text-[13px] group-hover:text-[#f36d00] overflow-hidden whitespace-nowrap overflow-ellipsis ${sub.subCategory === subCategoryDetectParameter ? 'text-[#f36d00] bg-[#EDEFF1]': 'text-black'}`}>{sub.subCategory}</div>
+                                <div className={`flex justify-between items-center py-1 pl-2 pr-2 hover:text-[#f36d00] hover:bg-[#EDEFF1] group ${search.category === categoryDetectParameter ? 'text-[#f36d00] bg-[#EDEFF1]': 'text-white'}`}>
+                                    <div className={`text-[13px] group-hover:text-[#f36d00] overflow-hidden whitespace-nowrap overflow-ellipsis ${search.category === categoryDetectParameter ? 'text-[#f36d00] bg-[#EDEFF1]': 'text-black'}`}>{search.category}</div>
                                     <FaAngleRight />
                                 </div>
                             </div>
                         ))}
                     </div>
-                )}
 
-                {isSubCategoriesHovered && (
-                    <div 
-                        onMouseEnter={() => handleFinalSubCategoriesOnMouseEnter()}
-                        onMouseLeave={() => handleFinalSubCategoriesOnMouseLeave()}
-                        className=' bg-white shadow-no-left'
-                    >
-                        {finalCategories.map((final, finalIndex) => (
-                            <div
-                                key={finalIndex}
-                                className='cursor-pointer text-[13px] py-1 pl-2 hover:text-[#f36d00] overflow-hidden whitespace-nowrap overflow-ellipsis'
-                            >
-                                {final}
-                            </div>
-                        ))}
-                    </div>
-                )}
+                    {isCategoryHovered && (
+                        <div
+                            onMouseEnter={() => handleOutSubCategoriesOnMouseEnter()}
+                            onMouseLeave={() => handleSubCategoriesOnMouseLeave()}
+                            className=' bg-white shadow-no-left'
+                        >
+                            {subCategories.map((sub, subIndex) => (
+                                <div 
+                                    key={subIndex}
+                                    onMouseEnter={() => handleSubCategoriesOnMouseEnter(sub.finalSubCategories, sub.subCategory)}
+                                    onMouseLeave={() => handleSubCategoriesOnMouseLeave()}
+                                    className='cursor-pointer'
+                                >
+                                    <div className={`flex justify-between items-center py-1 pl-2 pr-2 hover:text-[#f36d00] hover:bg-[#EDEFF1] group ${sub.subCategory === subCategoryDetectParameter ? 'text-[#f36d00] bg-[#EDEFF1]': 'text-white'}`}>
+                                        <div className={`text-[13px] group-hover:text-[#f36d00] overflow-hidden whitespace-nowrap overflow-ellipsis ${sub.subCategory === subCategoryDetectParameter ? 'text-[#f36d00] bg-[#EDEFF1]': 'text-black'}`}>{sub.subCategory}</div>
+                                        <FaAngleRight />
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    )}
+
+                    {isSubCategoriesHovered && (
+                        <div 
+                            onMouseEnter={() => handleFinalSubCategoriesOnMouseEnter()}
+                            onMouseLeave={() => handleFinalSubCategoriesOnMouseLeave()}
+                            className=' bg-white shadow-no-left'
+                        >
+                            {finalCategories.map((final, finalIndex) => (
+                                <div
+                                    key={finalIndex}
+                                    className='cursor-pointer text-[13px] py-1 pl-2 hover:text-[#f36d00] overflow-hidden whitespace-nowrap overflow-ellipsis'
+                                >
+                                    {final}
+                                </div>
+                            ))}
+                        </div>
+                    )}
+                </div>
             </div>
         </>
     )
