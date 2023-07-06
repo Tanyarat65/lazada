@@ -21,28 +21,28 @@ function App() {
             <div className='w-full'>
                 <Header />
                 <div className='p-calc'><SearchBar /></div>
-                <div className='p-calc bg-[#909FD8]  min-w-[1188px]'>
-                    <div className='relative w-[1188px]'>
+                <div className='p-calc bg-[#909FD8]'>
+                    <div className='relative grid md:grid-cols-3'>
                         <Sidebar />
                         <HeroContent />
                     </div>
                 </div>
 
                 {/* Body */}
-                <div className='p-calc bg-[#F5F5F5] pt-5 min-w-[1188px]'><Activity/></div>
-                <div className='p-calc bg-[#F5F5F5] pt-5 min-w-[1188px]'><FlashSale/></div>
-                <div className='p-calc bg-[#F5F5F5] pt-5 min-w-[1188px]'><LazMall/></div>
-                <div className='p-calc bg-[#F5F5F5] pt-5 min-w-[1188px]'><Category/></div>
-                <div className='p-calc bg-[#F5F5F5] pt-5 min-w-[1188px]'><Recommend/></div>
-                <div className='flex justify-center p-calc bg-[#F5F5F5] pt-5 min-w-[1188px]'><button className=' border border-[#01BFA6] text-[#01BFA6]  px-40 py-3'>โหลดเพิ่มเติม</button></div>
+                <div className='p-calc bg-[#F5F5F5] pt-5'><Activity/></div>
+                <div className='p-calc bg-[#F5F5F5] pt-5'><FlashSale/></div>
+                <div className='p-calc bg-[#F5F5F5] pt-5'><LazMall/></div>
+                <div className='p-calc bg-[#F5F5F5] pt-5'><Category/></div>
+                <div className='p-calc bg-[#F5F5F5] pt-5'><Recommend/></div>
+                <div className='flex justify-center p-calc bg-[#F5F5F5] pt-5'><button className=' border border-[#01BFA6] text-[#01BFA6]  px-40 py-3'>โหลดเพิ่มเติม</button></div>
                 
                 
                 {/* footer */}
-                <div className='p-calc bg-[#F5F5F5] pt-14 min-w-[1188px]'><Footer /></div>
-                <div className='p-calc bg-[#F5F5F5] min-w-[1188px]'><Footer2 /></div>
-                <div className='p-calc bg-white min-w-[1188px]'><Footer3 /></div>
-                <div className='p-calc bg-[#F5F5F5] py-14 min-w-[1188px]'><Footer4 /></div>
-                <div className='p-calc bg-white min-w-[1188px]'><Footer5 /></div>
+                <div className='p-calc bg-[#F5F5F5] pt-14'><Footer /></div>
+                <div className='p-calc bg-[#F5F5F5] '><Footer2 /></div>
+                <div className='p-calc bg-white'><Footer3 /></div>
+                <div className='p-calc bg-[#F5F5F5] py-14'><Footer4 /></div>
+                <div className='p-calc bg-white'><Footer5 /></div>
             </div>
         </>
     );

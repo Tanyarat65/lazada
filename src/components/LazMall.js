@@ -22,7 +22,7 @@ export default function LazMall() {
             </div>
         </div>
         <div className='drop-shadow-md px-5'>
-            <div className='grid grid-cols-[188px_188px] gap-4 md:grid-cols-[188px_188px_188px] lg:grid-cols-[188px_188px_188px_188px_188px_188px] xl:grid-cols-6'>
+            <div className='grid grid-cols-[188px_188px] justify-center gap-4 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6'>
                 {flashSale.map(item => (
                     <div className='relative bg-white hover:shadow-basic'>
                         <img src={item.imgFlash} loading='lazy' alt='imgFlash' className='h-[200px] w-full pb-10'/>

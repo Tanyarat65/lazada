@@ -21,14 +21,9 @@ import pciDss from '../assets/pictures/verify/pciDss.png';
 export default function Footer3() {
     return (
         <div className='bg-white py-[22px]'>
-            <div className='grid grid-cols-[594px_297px_297px] mb-[15px]'>
-                <div>วิธีการชำระเงิน</div>
-                <div>Delivery Services</div>
-                <div>Verified by</div>
-            </div>
-
-            <div className='grid grid-cols-[594px_594px]'>
+            <div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-[594px_594px]'>
                 <div className='grid grid-cols-1'>
+                    <div>วิธีการชำระเงิน</div>
                     <div className='flex justify-start items-start gap-x-[39px]'>
                         <img src={cashOnDelivery} alt='cash on delivery' className='w-[90px] select-none pointer-events-none' />
                         <img src={visaSmallIcon} alt='visa' className='w-[53px] h-[39px] select-none pointer-events-none' />
@@ -37,9 +32,10 @@ export default function Footer3() {
 
                     </div>
                 </div>
-                <div className='grid grid-cols-[297px_297px]'>
+                <div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-[297px_297px]'>
                     <div className='grid grid-cols-[297px]'>
-                        <div className='grid grid-cols-[96px_96px_96px]'>
+                        <div>Delivery Services</div>
+                        <div className='grid grid-cols-2 md:grid-cols-2 lg:grid-cols-[96px_96px_96px]'>
                             <img src={lazadaLogistic} alt='lazada' />
                             <img src={flashExpress} alt='flash' />
                             <img src={kerryExpress} alt='kerry' />
@@ -52,6 +48,7 @@ export default function Footer3() {
                         </div>
                     </div>
                     <div className='grid grid-cols-[297px]'>
+                        <div>Verified by</div>
                         <div className='grid grid-cols-[96px_96px_96px] gap-x-[7px]'>
                             <img src={iso} alt='iso' className='cursor-pointer' />
                             <img src={pciDss} className='w-[92px] cursor-pointer' alt='PCIDSS' />

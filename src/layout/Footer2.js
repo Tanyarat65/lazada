@@ -7,7 +7,7 @@ import lazadaIcon from '../assets/pictures/lazadaIcon.jpeg';
 
 export default function Footer2() {
     return (
-        <div className='grid grid-cols-[297px_297px_297px_297px] py-6 text-[#0F136D]'>
+        <div className='grid grid-cols-2 py-6 text-[#0F136D] md:grid-cols-[297px_297px] lg:grid-cols-[297px_297px_297px_297px]'>
             <div className='text-xs'>
                 <div className='text-base mb-1'>ศูนย์ดูแลลูกค้า</div>
                 <div className='cursor-pointer hover:underline'>ศูนย์ช่วยเหลือ</div>

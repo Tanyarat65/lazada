@@ -34,7 +34,7 @@ export default function FlashSale() {
     <div>
         <label className='text-[#323332] text-2xl py-14'>FlashSale</label>
         <div className='bg-white shadow px-5'>
-            <div className='flex justify-between items-center py-5'>
+            <div className='grid grid-cols-1 justify-between items-center py-5 md:grid-cols-[500px_200px]'>
                 <div className='flex items-center gap-3'>
                     <label className='text-sm text-[#F57224]'>ขณะนี้ลดราคาอยู่</label>
                     <label className='text-sm text-black pl-16'>จะสิ้นสุดใน</label>
@@ -45,7 +45,7 @@ export default function FlashSale() {
                 <button className='border border-[#F57224] px-2 py-1 text-[#F57224]'>ช้อปสินค้าทั้งหมด</button>
             </div>
             <div className='bg-[#b3b3b3] w-full h-[1px] mb-2'/>
-            <div className='grid grid-cols-[188px_188px] gap-4 md:grid-cols-[188px_188px_188px] lg:grid-cols-[188px_188px_188px_188px_188px_188px] xl:grid-cols-6'>
+            <div className='grid grid-cols-3 gap-4 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-6'>
                 {falshSale.map(item => (
                     <div className=' shadow-blue-gray-50 hover:shadow-basic'>
                         <img src={item.imgFlash} loading='lazy' alt='imgFlash'/>

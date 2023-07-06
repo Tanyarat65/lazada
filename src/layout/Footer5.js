@@ -17,7 +17,7 @@ import lazBlog from '../assets/pictures/footer/laz.png';
 
 export default function Footer5() {
     return (
-        <div className='grid grid-cols-[594px_594px] py-10 bg-white'>
+        <div className='grid grid-cols-1 py-10 bg-white md:grid-cols-[594px_594px]'>
             <div>
                 <div className='mb-1'>Lazada Southeast Asia</div>
                 <div className='flex justify-start items-start gap-x-1'>
