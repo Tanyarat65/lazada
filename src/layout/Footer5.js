@@ -17,7 +17,7 @@ import lazBlog from '../assets/pictures/footer/laz.png';
 
 export default function Footer5() {
     return (
-        <div className='grid grid-cols-1 py-10 bg-white md:grid-cols-[594px_594px]'>
+        <div className='grid grid-cols-1 py-10 bg-white md:grid-cols-[594px] lg:grid-cols-[594px_594px]'>
             <div>
                 <div className='mb-1'>Lazada Southeast Asia</div>
                 <div className='flex justify-start items-start gap-x-1'>
@@ -30,9 +30,9 @@ export default function Footer5() {
                 </div>
             </div>
             <div>
-                <div className='flex justify-between items-start'>
+                <div className='flex flex-col justify-between items-start md:flex-row'>
                     <div>
-                        <div className='mb-1'>Follow Us</div>
+                        <div className='mb-1 pt-10  md:pt-0'>Follow Us</div>
                         <div className='flex justify-start items-start gap-x-1'>
                             <div><img src={facebook} alt='facebook' className='w-[34px] h-[34px]' /></div>
                             <div><img src={linkedIn} alt='linkedIn' className='w-[34px] h-[34px]' /></div>
@@ -43,7 +43,7 @@ export default function Footer5() {
                             <div><img src={lazBlog} alt='lazBlog' className='w-[34px] h-[34px]' /></div>
                         </div>
                     </div>
-                    <div>© Lazada 2023</div>
+                    <div  className='pt-10 md:pt-0'>© Lazada 2023</div>
                 </div>
             </div>
         </div>

@@ -615,7 +615,7 @@ export default function Sidebar() {
 
     return (
         <>
-            <div className='grid grid-cols-[200px_200px_200px] h-[344px] absolute top-0 left-0 z-50' onMouseLeave={() => handleClearDetectParameter()}>
+            <div className='grid grid-cols-[200px] md:grid-cols-[200px_200px] lg:grid-cols-[200px_200px_200px] h-[344px] absolute top-0 left-0 z-50' onMouseLeave={() => handleClearDetectParameter()}>
                 <div className='bg-white shadow-basic'>
                     {searchCategories.map((search, index) => (
                         <div

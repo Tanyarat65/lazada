@@ -14,7 +14,7 @@ export default function Activity() {
         {id:5,name:'ร้านค้าแนะนำ', icon:advice},
     ];
     return (
-        <div className='grid grid-cols-1 justify-center sm:grid-cols-2 md:grid-cols-5 gap-5 px-6 justify-center items-center'>
+        <div className='grid grid-cols-1 justify-center sm:grid-cols-2 md:grid-cols-5 gap-5 px-6 items-center'>
             {activityButton.map(item => (
                 <div key={item.id} className='flex justify-center items-center pl-3 py-3 gap-4 shadow rounded-full bg-white w-auto cursor-pointer'>
                     <img src={item.icon} alt={item.name} className='w-8 h-8'/>
