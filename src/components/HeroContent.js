@@ -17,7 +17,8 @@ export default function HeroContent() {
         {id:6,imgSlice:img6},
     ]
     return (
-    <div className='w-[988px]'>
+    // <div className='w-[988px]'>
+    <div className='w-1/2 md:w-[500px] xl:w-[988px]'>
         <Carousel transition={{ type: 'easeInOut' }} autoplay={true} autoplayDelay={3000} loop={true} className='w-full h-[344px] ml-[200px]' >
         {/* <Carousel transition={{ duration: 0.5 }} autoplay={true} autoplayDelay={3000} loop={true} className='w-full h-[344px] ml-[200px]' > */}
             {imgSlice.map(item=>(

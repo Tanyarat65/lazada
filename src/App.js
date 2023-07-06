@@ -34,7 +34,7 @@ function App() {
                 <div className='p-calc bg-[#F5F5F5] pt-5'><LazMall/></div>
                 <div className='p-calc bg-[#F5F5F5] pt-5'><Category/></div>
                 <div className='p-calc bg-[#F5F5F5] pt-5'><Recommend/></div>
-                <div className='flex justify-center p-calc bg-[#F5F5F5] pt-5'><button className=' border border-[#01BFA6] text-[#01BFA6]  px-40 py-3'>โหลดเพิ่มเติม</button></div>
+                <div className='flex justify-center p-calc bg-[#F5F5F5] pt-5'><button className=' border border-[#01BFA6] text-[#01BFA6]  px-20 py-3 md:px-40'>โหลดเพิ่มเติม</button></div>
                 
                 
                 {/* footer */}

@@ -25,10 +25,10 @@ export default function Category() {
     <div>
         <label className='text-[#323332] text-2xl py-2'>หมวดหมู่</label>
         <div className='bg-white shadow px-5 py-5'>
-            <div className='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 xl:grid-cols-8'>
+            <div className='grid grid-cols-[200px_200px] justify-center md:grid-cols-4 lg:grid-cols-8 xl:grid-cols-8'>
                 {falshSale.map(item => (
                     <div className='hover:shadow-basic'>
-                        <img src={item.imgFlash} loading='lazy' alt='imgFlash'/>
+                        <img className='' src={item.imgFlash} loading='lazy' alt='imgFlash'/>
                         <div className='text-center'>{item.detail}</div>
                     </div>
                 ))}

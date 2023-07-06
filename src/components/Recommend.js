@@ -21,7 +21,7 @@ export default function Recommend() {
     <div>
         <label className='text-[#323332] text-2xl py-2'>สินค้าเพื่อคุณโดยเฉพาะ</label>
         <div className='px-5 py-3'>
-            <div className='grid grid-cols-[188px_188px] gap-4 md:grid-cols-[188px_188px_188px] lg:grid-cols-[188px_188px_188px_188px_188px_188px] xl:grid-cols-6'>
+            <div className='grid grid-cols-[188px_188px] justify-center gap-4 md:grid-cols-[188px_188px_188px] lg:grid-cols-[188px_188px_188px_188px_188px_188px] xl:grid-cols-6'>
                 {falshSale.map(item => (
                     <div className='bg-white shadow hover:shadow-basic p-1'>
                         <img src={item.imgFlash} loading='lazy' alt='imgFlash'/>
